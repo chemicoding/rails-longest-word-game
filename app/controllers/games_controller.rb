@@ -3,6 +3,7 @@ require 'open-uri'
 class GamesController < ApplicationController
     def new
         @letters = (0...10).map{65.+(rand(25)).chr}
+        
     end
 
     def score
